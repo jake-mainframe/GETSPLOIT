@@ -1,4 +1,10 @@
 # JCC Install
 /$CA
 $HASP000 OK;sh ./submit.sh ../SOFTWARE/CDEVMVS/01_add_reader.jcl
-# Install complete
+/ $HASP395 ADDREAD ENDED;sh ./submit.sh ../SOFTWARE/CDEVMVS/02_create_loadlib.jcl
+/ $HASP395 CREALOAD ENDED;sh echo "001A    3505    localhost:3606 sockdev autopad trunc ebcdic eof" >> conf/local.cnf
+# Rebooting MVS 3.8j
+/$pjes2
+/z eod
+/ IEE334I HALT     EOD SUCCESSFUL;/quiesce
+HHC00809I Processor CP00: disabled wait state;exit
