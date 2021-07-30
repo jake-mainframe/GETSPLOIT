@@ -1,5 +1,10 @@
-int main() {
-   // printf() displays the string inside quotation
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int main (int argc, char ** argv) {
    printf("Hello, World!");
-   return 0;
-}
+   return 1337;
+};
+

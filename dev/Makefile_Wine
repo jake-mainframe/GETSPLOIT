@@ -1,6 +1,7 @@
-CC=../jcc/jcc32
+export WINEARCH = win32
+CC=wine ../jcc/jcc.exe
 INCLUDE=-I../jcc/include
-LINK=../jcc/prelink
+LINK=wine ../jcc/prelink.exe
 LOBJS=../jcc/objs
 RDRPREP=../rdrprep/rdrprep
 HERCHOST=localhost
@@ -18,7 +19,7 @@ $(TARGET): $(OBJS) link.jcl
 	$(RDRPREP) link.jcl $(TARGET)
 
 hello.obj: hello.c
-	$(CC) $(INCLUDE) -o hello.c
+	$(CC) -o $(INCLUDE)  hello.c
 
 install: $(TARGET)
 	nc -w1 $(HERCHOST) $(HERCPORT) < $(TARGET)
