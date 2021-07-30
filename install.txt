@@ -1,0 +1,4 @@
+# JCC Install
+/$CA
+$HASP000 OK;sh ./submit.sh ../SOFTWARE/CDEVMVS/01_add_reader.jcl
+# Install complete
