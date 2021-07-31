@@ -1,0 +1,6 @@
+[submodule "FTPD"]
+	url = https://github.com/MVS-sysgen/FTPD.git
+[submodule "jcc"]
+	url = https://github.com/mvslovers/jcc.git
+[submodule "rdrprep"]
+	url = https://github.com/mvslovers/rdrprep.git
