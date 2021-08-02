@@ -6,9 +6,11 @@ RDRPREP=../rdrprep/rdrprep
 HERCHOST=localhost
 HERCPORT=3506
 
-TARGET = hello.jcl
-TARGETLIB=hello.out
-SRCS = hello.c
+NAME=hello
+
+TARGET = $(NAME).jcl
+TARGETLIB=$(NAME).out
+SRCS = $(NAME).c
 OBJS := $(SRCS:%.c=%.obj)
 
 all: $(TARGET)
@@ -17,8 +19,8 @@ $(TARGET): $(OBJS) link.jcl
 	$(LINK) -s $(LOBJS) $(TARGETLIB) $(OBJS)
 	$(RDRPREP) link.jcl $(TARGET)
 
-hello.obj: hello.c
-	$(CC) $(INCLUDE) -o hello.c
+$(NAME).obj: $(NAME).c
+	$(CC) $(INCLUDE) -o $(NAME).c
 
 install: $(TARGET)
 	nc -w1 $(HERCHOST) $(HERCPORT) < $(TARGET)
