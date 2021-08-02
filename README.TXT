@@ -1,1 +1,1 @@
-Installs JCC and MVSGCC C Compilers
+Creates a Program Load PDS, compiles a hello world c program, and runs it
