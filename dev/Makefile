@@ -4,7 +4,7 @@ LINK=../jcc/prelink
 LOBJS=../jcc/objs
 RDRPREP=../rdrprep/rdrprep
 HERCHOST=localhost
-HERCPORT=3606
+HERCPORT=3506
 
 TARGET = hello.jcl
 TARGETLIB=hello.out
