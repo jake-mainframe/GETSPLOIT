@@ -1,4 +1,6 @@
 [submodule "jcc"]
+	path = jcc
 	url = https://github.com/mvslovers/jcc.git
 [submodule "rdrprep"]
+	path = rdrprep
 	url = https://github.com/mvslovers/rdrprep.git
