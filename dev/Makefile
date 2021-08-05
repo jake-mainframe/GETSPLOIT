@@ -1,4 +1,4 @@
-CC=../jcc/jcc
+CC=../jcc/jcc32
 INCLUDE=-I../jcc/include
 LINK=../jcc/prelink
 LOBJS=../jcc/objs
