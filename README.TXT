@@ -1,1 +1,3 @@
-Creates a Program Load PDS, compiles a hello world c program, and runs it
+Compiles a GETS program with JCC
+Then provides an example of how to get code exec
+FTP needs to be turned on
