@@ -1,5 +1,12 @@
-# JCC Hello World Test
+# JCC GETS SPLOIT
 /$CA
-$HASP000 OK;sh ./submit.sh ../SOFTWARE/CDEVMVS/01_create_loadlib.jcl
-/ $HASP395 CREALOAD ENDED;sh ../SOFTWARE/CDEVMVS/02_make_helloworld.sh
-# Should return 1337
+$HASP000 OK;sh ../SOFTWARE/GETSPLOIT/01_make_gets.sh
+sh ./submit.sh ../SOFTWARE/GETSPLOIT/02_alloc_stdins.jcl
+/ $HASP395 ALLOCSTD ENDED;sh ../SOFTWARE/GETSPLOIT/03_upload_stdins.sh
+sh ./submit.sh ../SOFTWARE/GETSPLOIT/05_crash_run.jcl
+/ $HASP395 CRASHRUN ENDED;sh ./submit.sh ../SOFTWARE/GETSPLOIT/06_dump_run.jcl
+sh ../SOFTWARE/GETSPLOIT/07_grab_dump.sh
+sh ./submit.sh ../SOFTWARE/GETSPLOIT/08_locate_run.jcl
+/ $HASP395 LOCRUN ENDED;sh ../SOFTWARE/GETSPLOIT/09_grab_dump_loc.sh
+sh ./submit.sh ../SOFTWARE/GETSPLOIT/10_wto_test.jcl
+# Should WTO H4CK3D TH3 M41NFR4M3

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../SOFTWARE/CDEVMVS
+cd ../SOFTWARE/GETSPLOIT
 
 git submodule update --init
 

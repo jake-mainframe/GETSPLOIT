@@ -4,7 +4,10 @@
 
 
 int main (int argc, char ** argv) {
-   printf("Hello, World!");
-   return 1337;
+   char buff[150];
+   printf("Hi, what is your name?\n");
+   gets(buff);
+   printf("G'day %s", buff);
+   return 0;
 };
 

@@ -1,2 +1,2 @@
 # Installing CDEVMVS
-exec ../automate.rexx ../SOFTWARE/CDEVMVS/install.txt hercules.log -d &&
+exec ../automate.rexx ../SOFTWARE/GETSPLOIT/install.txt hercules.log -d &&
